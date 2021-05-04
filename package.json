@@ -1,0 +1,32 @@
+{
+  "name": "mern_backend",
+  "version": "1.0.0",
+  "description": "MongoDB, Express, React, NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuk-vezunchikz/mern_backend.git"
+  },
+  "keywords": [
+    "mern",
+    "react"
+  ],
+  "author": "Zhuk Evgeniy <evgeniy.zhuk.by@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuk-vezunchikz/mern_backend/issues"
+  },
+  "homepage": "https://github.com/zhuk-vezunchikz/mern_backend#readme",
+  "dependencies": {
+    "config": "^3.3.6",
+    "express": "^4.17.1",
+    "mongoose": "^5.12.7"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.2",
+    "nodemon": "^2.0.7"
+  }
+}
