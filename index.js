@@ -6,6 +6,8 @@ const clientsRoute = require('./routes/clients.routes')
 
 const app = express();
 
+app.use(express.json({extendet: true}))
+
 app.use('/api/clients', clientsRoute)
 
 const PORT = config.get('port' || 5000)

@@ -7,12 +7,15 @@ const router = Router()
 
 // api/clients/addClient
 router.post('/addClient', async (req, res) => {
+    
     try {
+        console.log('Body: ', req.body);
+
         const {firstName, lastName, phone} = req.body
 
         const client = new Client({firstName, lastName, phone})
 
-        await URLSearchParams.save()
+        await client.save()
 
         res.status(200).json({message: "Пользователь создан"})
         

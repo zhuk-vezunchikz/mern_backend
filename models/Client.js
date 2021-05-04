@@ -1,9 +1,9 @@
 const {Schema, model} = require('mongoose')
 
 const schema = new Schema({
-    firstName: {type: String, required: true},
-    lastName: {type: String, required: true},
-    phone: {type: String, required: true}
+    firstName: {type: String},
+    lastName: {type: String},
+    phone: {type: String}
 })
 
 module.exports = model('Client', schema)
